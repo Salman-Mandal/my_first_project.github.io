@@ -1,0 +1,195 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* css variables */
+:root{
+    --navber-height:59px;
+}
+
+/* navigation bar */
+#navber{
+    display: flex;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+}
+#navber::before{
+    content: "";
+    position: absolute;
+  
+     background-color: black;
+     height:  100%;
+     width: 100%;
+     z-index: -4;
+     opacity: 0.4;
+}
+/* logo and image */
+#logo{
+    margin: -4px 7px;
+}
+#logo img{
+    margin: 3px 5px;
+    height: 70px;
+    width: 96px;
+    /* filter: invert(50%); */
+}
+/* list styling */
+#navber ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+#navber ul li{
+    list-style-type: none;
+font-size: 1.3rem;
+}
+#navber ul li a{
+color: #0b6634;
+  display: block;
+  padding: 10px 11px;
+  text-decoration: none;
+  border-radius: 20px;
+ 
+}
+#navber ul li a:hover{
+color: black;
+ background-color: white;
+}
+/* Home decoration */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    padding: 3px 200px;
+    align-items: center;
+    justify-content: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+       background: url('kitchen.jpg') no-repeat center center/cover;
+     height:  70%;
+     width: 100%;
+     z-index: -1;
+     opacity: 0.95;
+}
+#home h1{
+    color:black;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color:#ff3b00;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* services-center */
+#services-center{
+    margin: 66px 2px;
+}
+#services {
+display: flex;
+margin: 35px;
+}
+#services .box{
+border: 2px solid red;
+padding: 34px;
+margin: 3px 6px;
+border-radius: 23px;
+background-color: #def0dd;
+}
+#services .box img {
+height: 160px;
+display: block;
+margin: auto;
+}
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+/* clients section */
+.client-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-box img{
+height: 150px;
+}
+#client::before{
+content: "";
+position: absolute;
+background: url('kitchen2.jpg') no-repeat center center/cover;
+width: 100%;
+height: 230px;
+z-index: -1;
+opacity: 0.7;
+}
+/* contact section */
+#contact{
+    position: relative;
+    top: -34px;
+}
+#contact::before{
+    content: "";
+    background: url(contact-us.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 108%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+.contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+/* .contact-box form{
+  width: 40%;} */
+.contact-box textarea,.contact-box input{
+   width: 100%;
+   padding: 0.5rem;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+/* utility Classes */
+.headp{
+    padding: 12px;
+    font-size: 3.8rem;
+    font-family: 'Bree Serif', serif;
+}
+.heads{
+    padding: 12px;
+    font-size: 2.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgba(189, 180, 180, 0.68);
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: black;
+ background-color: white;
+}
+.center{
+    text-align: center;
+}
